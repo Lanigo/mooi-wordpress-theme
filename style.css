@@ -386,7 +386,7 @@ hr {
 	background-color: #ccc;
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 0px !important;
 }
 
 ul,
@@ -693,6 +693,10 @@ a:active {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.foot-line {
+	height: 2px;
+	width: 100%;
+}
 
 /*--------------------------------------------------------------
 # Accessibility

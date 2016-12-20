@@ -95,6 +95,45 @@ function mooi_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+/*
+* The left footer sidebar
+*/
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Left', 'mooi' ),
+		'id'            => 'footer-left',
+		'description'   => esc_html__( 'Widgets you add here will appear in the left column of the footer.', 'mooi' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+/*
+* The middle footer sidebar
+*/
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Middle', 'mooi' ),
+		'id'            => 'footer-middle',
+		'description'   => esc_html__( 'Widgets you add here will appear in the middle column of the footer.', 'mooi' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+/*
+* The right footer sidebar
+*/
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Right', 'mooi' ),
+		'id'            => 'footer-right',
+		'description'   => esc_html__( 'Widgets you add here will appear in the right column of the footer.', 'mooi' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'mooi_widgets_init' );
 
